@@ -8,6 +8,10 @@
     <title>joglo kawruh</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
@@ -32,7 +36,7 @@
         background-size: cover;
         background-position: center;
     }
-    
+
     .navbar .container {
         display: flex;
         justify-content: center;
@@ -174,6 +178,59 @@
             font-size: 16px;
         }
     }
+
+    .social-icons {
+        position: relative;
+        z-index: 2;
+    }
+
+    .social-icons .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 100rem;
+    }
+
+    @media (min-width: 992px) {
+        .social-icons {
+            position: absolute;
+            height: 100%;
+            top: 0;
+            right: 2.5rem;
+            width: auto;
+        }
+    }
+
+    .d-flex {
+        display: flex !important;
+    }
+
+    .flex-row {
+        flex-direction: row !important;
+    }
+
+    .justify-content-around {
+        justify-content: center !important;
+    }
+
+    .align-items-around {
+        align-items: center !important;
+    }
+
+    .h-100 {
+        height: 100% !important;
+    }
+
+    .mt-3 {
+        margin-top: 1rem !important;
+    }
+
+    .mt-lg-0 {
+        margin-top: 0 !important;
+    }
 </style>
 
 <body>
@@ -203,22 +260,22 @@
                             YOGYAKARTA</a>
                     </li>
                     <li>
-						<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-							<button type="button" class="btn btn-warning" href="">Monitoring</button>
-							<button type="button" class="btn btn-warning" href="">Data Pegawai</button>
+                        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                            <button type="button" class="btn btn-warning" href="">Monitoring</button>
+                            <button type="button" class="btn btn-warning" href="">Data Pegawai</button>
 
-							<div class="btn-group" role="group">
-								<button id="btnGroupDrop1" type="button" class="btn btn-warning dropdown-toggle"
-									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									PROFILE
-								</button>
-								<div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-									<a class="dropdown-item" href="profile.html">My Profile</a>
-									<a class="dropdown-item" href="#">Log Out</a>
-								</div>
-							</div>
-						</div>
-					</li>
+                            <div class="btn-group" role="group">
+                                <button id="btnGroupDrop1" type="button" class="btn btn-warning dropdown-toggle"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    PROFILE
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                    <a class="dropdown-item" href="profile.html">My Profile</a>
+                                    <a class="dropdown-item" href="#">Log Out</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
 
             </div>
@@ -378,7 +435,14 @@
 
     <div id="page-container">
         <div id="content-wrap">
-            <!-- all other page content -->
+            <div class="social-icons">
+                <div class="d-flex flex-row justify-content-around align-items-around h-100 mt-3 mt-lg-0">
+                    <a class="btn btn-warning m-3" href="#!"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-warning m-3" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-warning m-3" href="#!"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-warning m-3" href="#!"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
         </div>
         <footer id="footer">
             <p>
